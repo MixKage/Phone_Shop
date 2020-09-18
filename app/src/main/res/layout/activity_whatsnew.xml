@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".whatsnew"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/imageBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/back_whats_new"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"        />
+
+    <TextView
+    android:id="@+id/update"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="50dp"
+    android:fontFamily="sans-serif-light"
+    android:text="Обновления"
+    android:textSize="46sp"
+        android:textColor="#ffffff"
+    />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="50dp"
+        android:fontFamily="sans-serif-light"
+        android:text="1. Добавлены анимации\n2. Добавлена отправка заказа\n3. Добавлен экран обновлений\n4. Добавлен экран с настройками"
+        android:textSize="23sp"
+        android:textColor="#ffffff"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="35dp"
+        android:text="Skip"
+        android:fontFamily="sans-serif-light"
+        android:textSize="30sp"
+        android:onClick="skip_update"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
+
+
+
